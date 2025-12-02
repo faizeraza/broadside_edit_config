@@ -15,4 +15,15 @@ public class TemplateView {
     private boolean exists;
     private long fileSize;
     private String lastModified;
+
+    // Additional metadata
+    private String description;
+    private String version;
+    private String contentHash; // For integrity checking
+    private boolean hasBackup;
+    private String backupPath;
+
+    // Validation info
+    private boolean isValidHtml;
+    private String validationMessage;
 }

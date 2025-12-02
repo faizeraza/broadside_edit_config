@@ -10,4 +10,9 @@ import lombok.Setter;
 public class TemplateUpdateRequest {
 
     private String htmlContent;
+
+    // Optional: Add metadata for better tracking
+    private String description;
+    private String version;
+    private boolean createBackup = true; // Default to true for safety
 }
